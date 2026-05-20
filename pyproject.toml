@@ -1,0 +1,23 @@
+[project]
+name = "fragrag"
+version = "0.1.0"
+description = "RAG over fragrance reviews with statistically-significant evals"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "psycopg[binary]>=3.2.0",
+    "pgvector>=0.3.0",
+    "sentence-transformers>=3.0.0",
+    "datasets>=3.0.0",
+    "pandas>=2.2.0",
+    "python-dotenv>=1.0.0",
+    "google-genai>=0.40.0",
+    "streamlit>=1.40.0",
+]
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.0",
+    "ipykernel>=6.29.0",
+]
